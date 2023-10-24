@@ -105,4 +105,8 @@ a {
 }
 .nav_toggle {
   cursor: pointer;
+}
+
+.show {
+  left: 0;
 }/*# sourceMappingURL=styles.css.map */
