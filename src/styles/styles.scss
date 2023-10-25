@@ -289,8 +289,85 @@ a{
 }
 
 /* Media Queries **/
-@media screen and(min-width:968px){
+@media screen and (min-width:968px){
     body{
         margin: 0;
     }
+    .nav{
+        height: $header-height +1rem;
+
+        &_list{
+            display: flex;
+
+        }
+        &_item{
+            margin-right: 3rem;
+            margin-bottom: 0;
+        }
+        &_toggle{
+            display: none;
+        }
+    }
+    .home{
+            height: 100vh;
+            grid-template-columns: max-content max-content;
+            grid-template-rows: max-content;
+            align-content: center;
+            justify-content: center;
+            column-gap: 6rem;
+    }
+    .sneaker{
+        &_figure{
+            width: 430px;
+            height: 430px;
+        }
+        &_img{
+            width: 550px;
+            top:13%;
+            left: -6%;
+        }
+        &_colors{
+            right: initial;
+            bottom: 0;
+            & span{
+                display: inline-block;
+            }
+        }
+    }
+    .info{
+        align-self: center;
+    }
+    .data{
+        margin-bottom: 2.5rem;
+
+        &_subtitle{
+            font-size: 1.5rem;
+        }
+        &_title{
+            margin-bottom: 1rem;
+        }
+    }
+    .size{
+        margin-bottom: 2.5rem;
+
+        &_tallas{
+            width: 34px;
+            height: 34px;
+            line-height: 35px;
+
+        }
+    }
+    .preci{
+        position: initial;
+        justify-content: space-between;
+        background-color: initial;
+        box-shadow: none;
+
+        &_title{
+            color: var(--black-color);
+            font-weight: $font-medium;
+        }
+    }
+
+
 }

@@ -258,4 +258,79 @@ a {
   color: var(--white-color);
   padding: 1.25rem;
   border-radius: 0.5rem;
+}
+
+/* Media Queries **/
+@media screen and (min-width: 968px) {
+  body {
+    margin: 0;
+  }
+  .nav {
+    height: 4rem;
+  }
+  .nav_list {
+    display: flex;
+  }
+  .nav_item {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+  .nav_toggle {
+    display: none;
+  }
+  .home {
+    height: 100vh;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content;
+    align-content: center;
+    justify-content: center;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
+  .sneaker_figure {
+    width: 430px;
+    height: 430px;
+  }
+  .sneaker_img {
+    width: 550px;
+    top: 13%;
+    left: -6%;
+  }
+  .sneaker_colors {
+    right: initial;
+    bottom: 0;
+  }
+  .sneaker_colors span {
+    display: inline-block;
+  }
+  .info {
+    align-self: center;
+  }
+  .data {
+    margin-bottom: 2.5rem;
+  }
+  .data_subtitle {
+    font-size: 1.5rem;
+  }
+  .data_title {
+    margin-bottom: 1rem;
+  }
+  .size {
+    margin-bottom: 2.5rem;
+  }
+  .size_tallas {
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+  }
+  .preci {
+    position: initial;
+    justify-content: space-between;
+    background-color: initial;
+    box-shadow: none;
+  }
+  .preci_title {
+    color: var(--black-color);
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=styles.css.map */
