@@ -104,6 +104,7 @@ a{
             padding: 2rem;
             z-index: var(--z-fixed);
             transition: .3s;
+            transform: translateX(-100%);
         }
     }
     &_item{
@@ -119,6 +120,13 @@ a{
 }
 .show{
   left:0;
+  transform: translateX(0);
+  /* When the "show" class is not present,
+   the menu is typically translated off-screen
+   (to the left) by setting transform: translateX(-100%);.
+   Applying transform: translateX(0); with the "show" class brings
+ the menu back to its original position, making it visible on the screen.
+**/
 }
 
 
